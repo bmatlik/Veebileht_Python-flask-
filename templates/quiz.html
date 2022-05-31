@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block title %}Quiz-mäng{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Quiz </title>
+
+<style>
+
+body {
+	text-align: center;
+}	
+
+</style>	
+
+</head>
+
+<body>
+<h1> Quiz </h1>
+<font color="white"> 1. Mis on 2333x10?<br> <font>
+<input type= "radio" name="Küsimus1" >23300<br>
+<input type= "radio" name="Küsimus1" >2330<br>
+<input type= "radio" name="Küsimus1" >233000<br>
+<input type= "radio" name="Küsimus1" id="correct1" >23330<br>
+
+2. Mis on 10% 110st?<br>
+<input type= "radio" name="Küsimus2" >10<br>
+<input type= "radio" name="Küsimus2" id="correct2" >11<br>
+<input type= "radio" name="Küsimus2" >10.5<br>
+<input type= "radio" name="Küsimus2" >55<br>
+
+
+3. Mis on raskem kas 1 liiter vett või 1 kilo rauda ?<br>
+<input type= "radio" name="Küsimus3" >Raud<br>
+<input type= "radio" name="Küsimus3" >Vesi<br>
+<input type= "radio" name="Küsimus3" id="correct3" >Mõlemad on sama kaaluga<br>
+<input type= "radio" name="Küsimus3" >Õige vastus puudub.<br>
+
+
+4. Mis on Eesti pealinn?<br>
+<input type= "radio" name="Küsimus4" >Tartu<br>
+<input type= "radio" name="Küsimus4" id="correct4" >Tallinn<br>
+<input type= "radio" name="Küsimus4" >Pärnu<br>
+<input type= "radio" name="Küsimus4" >Viljandi<br>
+
+5. Mis on Eesti suvepealinn?<br>
+<input type= "radio" name="Küsimus5" >Narva<br>
+<input type= "radio" name="Küsimus5" >Rakvere<br>
+<input type= "radio" name="Küsimus5" id="correct5" >Pärnu<br>
+<input type= "radio" name="Küsimus5" >Tallinn<br>
+<input type= "radio" name="Küsimus5" >Viljandi<br>
+<input type= "radio" name="Küsimus5" >Haapsalu<br>
+
+
+</font>
+
+
+<input type="submit" name="submit" value="Esita vastused" onclick="result()">
+
+<br>&nbsp;
+
+<script type="text/javascript">
+	function result() {
+		// body..
+		var score=0;
+		if (document.getElementById('correct1').checked)
+		{
+			score++;
+		}
+		if (document.getElementById('correct2').checked)
+		{
+			score++;
+		}
+		if (document.getElementById('correct3').checked)
+		{
+			score++;
+		}
+		if (document.getElementById('correct4').checked)
+		{
+			score++;
+		}
+		if (document.getElementById('correct5').checked)
+		{
+			score++;
+		}
+	
+
+		document.write("Teie skoor on:"+score + " " +"õiget vastust");
+
+	}
+
+</script>
+</body>
+</html>
+{% endblock %}

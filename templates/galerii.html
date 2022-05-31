@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% block title %}Galerii{% endblock %}
+{% block content %}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.footer {
+   position: fixed;
+   left:  0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 7px;
+
+}
+
+div.gallery {
+  #border: 1px solid #ccc;
+
+}
+
+div.gallery:hover {
+  filter: drop-shadow(4px 4px 7px gray);
+  #transform:  scale(1.1);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  text-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h4 { text-align: center;
+ }
+
+
+</style>
+</head>
+<body>
+
+<h1>Galerii</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="../static/meri.jpg">
+      <img src="../static/meri.jpg" alt="Meri" width="600" height="400">
+    </a>
+    <div class="desc"><font color="white">Meri</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="../static/nature.jpg">
+      <img src="../static/nature.jpg" alt="Nature" width="600" height="400">
+    </a>
+    <div class="desc">Mäed</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="../static/vaade.jpg">
+      <img src="../static/vaade.jpg" alt="Vaade" width="600" height="400">
+    </a>
+    <div class="desc">Linnavaade</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_self" href="../static/mets.jpg">
+      <img src="../static/mets.jpg" alt="Mets" width="600" height="400">
+    </a>
+    <div class="desc">Mets</div>
+  </div>
+</div>
+
+</font>
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p></p>
+</div>
+
+
+
+</body>
+</html>
+
+{% endblock %}

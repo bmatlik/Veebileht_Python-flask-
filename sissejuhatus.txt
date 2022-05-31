@@ -1,0 +1,2 @@
+See on minu veebileht, mis ma valisin oma projektiks. Veebileht on programmeeritud pythoniga ja moodul flaskiga.
+Flaski peab cmd, terminali kaudu installeerima "pip install flask" käsuga. Veebileht on valmistatud htmli- ja cssiga. Veebileht sisaldab erinevaid lehti, mis on kaustas templates ja ka mõned pildid kaustas static.
