@@ -7,7 +7,7 @@ app.secret_key = "hello"
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index1.html")
 
 @app.route("/Avaleht")
 def home2():
