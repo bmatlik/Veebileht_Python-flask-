@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Videod{% endblock %}
+{% block title %}Video{% endblock %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
@@ -10,28 +10,40 @@
 
 
 
-p {
-	text-align: center;
-	font-size: 17px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: verdana;
-  color: white;
+.footer {
+   position: fixed;
+   left:  0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 7px;
+
 }
 
-</style>	
-	
+.suurus {
+	text-align: center;
+}
+
+.video {
+	width:%;
+	max-width: 100%;
+}
+
+
+</style>
+
 </head>
 <body>
 	<h1>Video</h1>
 
 
+<div class="suurus">
+<p> <iframe class="video" width="560" height="315" src="https://www.youtube-nocookie.com/embed/F_7ZoAQ3aJM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+</div>
 
-
-
-<p> <iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/F_7ZoAQ3aJM?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
-
-&nbsp;&nbsp;
+&nbsp;
 
 </body>
 </html>
