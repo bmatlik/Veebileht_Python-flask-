@@ -6,4 +6,4 @@ Siit saate allalaadida programmeerimiskeele python: https://www.python.org/downl
 
 Siin on juhend kuidas flaski installeerida: https://flask.palletsprojects.com/en/2.0.x/installation/
 
-Siin on valmis lehekülg - http://benjamin123.eu.pythonanywhere.com/Avaleht
+Siin on valmis lehekülg - http://benjamin123.eu.pythonanywhere.com
